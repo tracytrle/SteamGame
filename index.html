@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Steam Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a
+          href="https://store.steampowered.com/?snr=1_4_4__global-responsive-menu"
+        >
+          <img
+            src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png"
+            height="36"
+            alt="STEAM"
+          />
+        </a>
+      </div>
+      <div id="nav-links">
+        <li class="home">Home</li>
+        <li class="my-games">My Games</li>
+        <li>
+          <button>Login</button>
+        </li>
+      </div>
+    </header>
+    <main class="games-display">
+      <div class="search-games">
+        <div>
+          <form action="" class="searchForm">
+            <div class="searchbox">
+              <input
+                id="searchInput"
+                name="term"
+                type="text"
+                class="default"
+                placeholder="Search"
+                size="22"
+                autocomplete="off"
+                maxlength="64"
+              />
+            </div>
+            <div id="search-logo">
+              <svg
+                class="search-icon"
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                ></path>
+              </svg>
+            </div>
+          </form>
+          <div class="category">
+            <div id="categoryGroup">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <!-- <li id="action-query">Action</li>
+                <li id="adventure-query">Adventure</li>
+                <li id="casual-query">Casual</li>
+                <li>Free to Play</li>
+                <li>Indie</li>
+                <li>Racing</li>
+                <li>Simulation</li>
+                <li>Sports</li>
+                <li>Strategy</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="showing-games" class="show-games">
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://cdn.akamai.steamstatic.com/steam/apps/1272080/header.jpg?t=1686505512"
+              data-id="1272080"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Pay Day 3</p>
+            <p id="game-price">$8.99</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://cdn.akamai.steamstatic.com/steam/apps/1085660/header.jpg?t=1684966156"
+              data-id="1085660"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Destiny 2</p>
+            <p id="game-price">$9.99</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1554408611"
+              data-id="1085660"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Dota 2</p>
+            <p id="game-price">$4.95</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://steamcdn-a.akamaihd.net/steam/apps/252950/header_alt_assets_6.jpg?t=1556125255"
+              data-id="1272080"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Rocket League</p>
+            <p id="game-price">$9.99</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://steamcdn-a.akamaihd.net/steam/apps/105600/header.jpg?t=1548954652"
+              data-id="1272080"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Terrari</p>
+            <p id="game-price">$4.95</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg?t=1554409309"
+              data-id="1272080"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Counter Strike</p>
+            <p id="game-price">$9.99</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://steamcdn-a.akamaihd.net/steam/apps/72850/header.jpg?t=1493767797"
+              data-id="1272080"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Skyrim</p>
+            <p id="game-price">$8.99</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://steamcdn-a.akamaihd.net/steam/apps/550/header.jpg?t=1540300687"
+              data-id="1272080"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Left 4 Dead 2</p>
+            <p id="game-price">$7.99</p>
+          </div>
+        </div>
+        <div class="game_wrapper">
+          <div class="cover" onclick="getDetail()">
+            <img
+              src="https://cdn.akamai.steamstatic.com/steam/apps/261700/header.jpg?t=1681122438"
+              data-id="261700"
+            />
+          </div>
+          <div class="game-info">
+            <p id="game-name">Eryi's Action</p>
+            <p id="game-price">$8.99</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Loading</footer>
+    <script src="/index.js"></script>
+  </body>
+</html>
