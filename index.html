@@ -21,8 +21,8 @@
         </a>
       </div>
       <div id="nav-links">
-        <li class="home">Home</li>
-        <li class="my-games">My Games</li>
+        <li id="home-tab" class="home">Home</li>
+        <li class="about-us">About Us</li>
         <li>
           <button>Login</button>
         </li>
@@ -32,37 +32,22 @@
       <div class="search-games">
         <div>
           <form action="" class="searchForm">
-            <div class="searchbox">
-              <input
-                id="searchInput"
-                name="term"
-                type="text"
-                class="default"
-                placeholder="Search"
-                size="22"
-                autocomplete="off"
-                maxlength="64"
-              />
-            </div>
-            <div id="search-logo">
-              <svg
-                class="search-icon"
-                focusable="false"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                ></path>
-              </svg>
-            </div>
+            <input
+              id="searchInput"
+              type="text"
+              placeholder="Search"
+              size="22"
+              autocomplete="off"
+              maxlength="64"
+            />
+            <button id="search-logo"></button>
           </form>
           <div class="category">
             <div id="categoryGroup">
               <ul>
+                <!-- <li></li>
                 <li></li>
-                <li></li>
-                <li></li>
+                <li></li> -->
                 <!-- <li id="action-query">Action</li>
                 <li id="adventure-query">Adventure</li>
                 <li id="casual-query">Casual</li>
@@ -78,6 +63,55 @@
         </div>
       </div>
       <div id="showing-games" class="show-games">
+        <!--  
+        <div>
+          <div class="game-title">Team Fortress Classic</div>
+          <div class="game-detail">
+            <div class="image">
+              <img
+                src="https://steamcdn-a.akamaihd.net/steam/apps/20/header.jpg?t=1528732825"
+                alt="game-picture"
+              />
+            </div>
+            <div class="contain">
+              <p class=description"">
+                Play the world's number 1 online action game. Engage in an
+                incredibly realistic brand of terrorist warfare in this wildly
+                popular team-based game. Ally with teammates to complete
+                strategic missions. Take out enemy sites. Rescue hostages. Your
+                role affects your team's success. Your team's success affects
+                your role.
+              </p>
+             <div class="moreinfo">
+              <p>RECENT REVIEW : Positive</p>
+              <p>RELEASE DATE: 1999-04-01T00:00:00.000Z</p>
+              <p>DEVELOPER: Valve</p>
+            </div> 
+            </div>
+          </div>
+          <div class="game-tags">
+            <p>Popular user-defined tags for this product:<p>
+            
+            
+            <div class="tags">
+              <div class="tag">
+                One
+              </div>
+              <div class="tag">
+                Two
+              </div>
+              <div class="tag">
+                Three
+              </div>
+              <div class="tag">
+                Four
+              </div>
+          </div>
+            </div>
+          </div>
+        </div>
+          -->
+          <!--  
         <div class="game_wrapper">
           <div class="cover" onclick="getDetail()">
             <img
@@ -111,7 +145,7 @@
           </div>
           <div class="game-info">
             <p id="game-name">Dota 2</p>
-            <p id="game-price">$4.95</p>
+            <p id="game-price">$0</p>
           </div>
         </div>
         <div class="game_wrapper">
@@ -186,9 +220,12 @@
             <p id="game-price">$8.99</p>
           </div>
         </div>
+        -->
       </div>
     </main>
-    <footer>Loading</footer>
+    <footer id="footerTag">
+      <button id="loadmore">Show more games</button>
+      </footer>
     <script src="/index.js"></script>
   </body>
 </html>
